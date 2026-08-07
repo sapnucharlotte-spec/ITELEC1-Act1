@@ -522,13 +522,14 @@ body{
 }
 
 .page-description{
-    max-width:700px;
+    max-width:1300px;
     margin:15px auto 50px;
     text-align:center;
     font-size:15px;
     line-height:1.8;
     color:#5f062c;
     margin-top: -5px;
+    padding:0 20px;
 }
 
 .artworks-container{
