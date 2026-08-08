@@ -19,8 +19,25 @@ animateProfile();
 
 function openModal(level) {
     modal.style.display = "flex";
+    if (level === "elem") {
+        title.innerHTML = "Elementary School";
 
-    if (level === "junior") {
+        school.innerHTML = 
+            "<strong>School Graduated:</strong> San Joaquin Elementary School (2012-2018)";
+
+        credential.innerHTML = `
+            <strong>Credentials</strong>
+            <ul>
+                <li>Grade 3: With Honors</li>
+                <li>Grade 4: With Honors</li>
+                <li>Grade 5: With Honors</li>
+                <li>Grade 6: With Honors</li>
+                <li>3rd Place in Chess</li>
+                <li>3rd Place in Journalism (Copy Reading Tagalog)</li>
+            </ul>
+        `;
+
+    } else if (level === "junior") {
         title.innerHTML = "Junior High School";
 
         school.innerHTML = 
