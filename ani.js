@@ -4,6 +4,7 @@ const modal = document.getElementById("modal");
 const title = document.getElementById("title");
 const school = document.getElementById("school");
 const credential = document.getElementById("credential");
+const schoolLogo = document.getElementById("schoolLogo");
 
 let y = 0;
 
@@ -21,6 +22,8 @@ function openModal(level) {
     modal.style.display = "flex";
     if (level === "elem") {
         title.innerHTML = "Elementary School";
+
+        schoolLogo.style.display = "none";
 
         school.innerHTML = 
             "<strong>School Graduated:</strong> San Joaquin Elementary School (2012-2018)";
@@ -40,6 +43,9 @@ function openModal(level) {
     } else if (level === "junior") {
         title.innerHTML = "Junior High School";
 
+        schoolLogo.style.display = "block";
+        schoolLogo.src = "photos/logo.png";
+
         school.innerHTML = 
             "<strong>School Graduated:</strong> Doña Asuncion Lee Integrated School (2018-2022)";
 
@@ -54,6 +60,9 @@ function openModal(level) {
         `;
     } else if (level === "senior") {
         title.innerHTML = "Senior High School";
+
+        schoolLogo.style.display = "block";
+        schoolLogo.src = "photos/logo1.png";
 
         school.innerHTML =
             "<strong>School Graduated:</strong> Children of Fatima School Inc. (2022-2024) Mabiga";
@@ -71,6 +80,9 @@ function openModal(level) {
 
         school.innerHTML =
             "<strong>School:</strong> Mabalacat City College";
+
+        schoolLogo.style.display = "block";
+        schoolLogo.src = "photos/logo2.png";
 
         credential.innerHTML = `
             <strong>Current Achievements</strong>
